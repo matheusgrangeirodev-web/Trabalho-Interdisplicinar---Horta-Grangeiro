@@ -1,0 +1,50 @@
+@media (max-width: 960px) {
+
+    .apresentacao-horta {
+        grid-template-columns: 1fr;
+        grid-template-areas: "texto";
+    }
+
+
+    .historia-horta {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "texto"
+            "foto";
+    }
+
+    .historia-foto img {
+        height: 320px;
+    }
+
+
+    .historia-foto-provisoria img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .apresentacao-imagem {
+        display: none;
+    }
+
+    .grade-missao {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grade-equipe {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .grade-destaques > .cartao-produto,
+    .grade-produtos > .cartao-produto {
+        flex-basis: calc((100% - 2rem) / 2);
+    }
+
+    .grade-contato {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "formulario"
+            "informacoes";
+    }
+}

@@ -1,0 +1,121 @@
+@media (max-width: 600px) {
+
+    h2 { font-size: 1.55rem; }
+    .topo-pagina h1 { font-size: 1.75rem; }
+
+    .grade-missao,
+    .grade-equipe {
+        grid-template-columns: 1fr;
+    }
+
+    .grade-destaques > .cartao-produto,
+    .grade-produtos > .cartao-produto {
+        flex-basis: 100%;
+    }
+
+    .foto-produto {
+        aspect-ratio: 1 / 1;
+        max-height: none;
+    }
+
+    .cartao-descricao {
+        padding: 1.25rem 1.25rem;
+    }
+
+    .cartao-descricao h3 {
+        font-size: 1.35rem;
+    }
+
+    .historia-foto img {
+        height: 240px;
+    }
+
+    .historia-foto-provisoria img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .cartao-missao,
+    .cartao-membro {
+        min-height: 0;
+    }
+
+    .menu-alternar {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        width: 32px;
+        height: 32px;
+        margin: 0;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu-botao {
+        display: flex;
+    }
+
+    .navegacao {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--verde-escuro);
+        flex-direction: column;
+        padding: 0.5rem 5%;
+        gap: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        z-index: 190;
+    }
+
+    .menu-alternar:checked ~ .navegacao {
+        display: flex;
+    }
+
+    .navegacao a {
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.95rem;
+        width: 100%;
+    }
+
+    .navegacao a:last-child {
+        border-bottom: none;
+    }
+
+    .cabecalho {
+        position: relative;
+    }
+
+    .rodape-conteudo {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.2rem;
+    }
+
+    .conteudo {
+        padding: 0 max(4%, 16px);
+    }
+
+    .secao {
+        padding: 2.5rem 0;
+    }
+
+    .banner-principal img {
+        min-height: 220px;
+        object-position: center;
+    }
+
+    .topo-pagina {
+        padding: 4rem 5% 3rem;
+    }
+
+    .grupo-campo {
+        margin-bottom: 1rem;
+    }
+}
